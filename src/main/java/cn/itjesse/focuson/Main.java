@@ -46,25 +46,31 @@ public class Main extends JavaPlugin implements Listener {
             Long lastSend = sendList.get(playName);
             if (lastSend != null) {
                 if (now - lastSend > 1) {
+                    this.sendNotice(event);
                     sendList.remove(playName);
                     sendList.put(playName, now);
-                } else {
-                    return;
                 }
             } else {
+                this.sendNotice(event);
                 sendList.put(playName, now);
             }
-            Location monsterLocation = event.getEntity().getLocation();
-            Location playerLocation = p.getLocation();
-            int distance = (int)Math.floor(monsterLocation.distance(playerLocation));
-            String reason = event.getReason().toString();
-            // getLogger().info(playName);
-            // getLogger().info(reason);
-            // getLogger().info("Send time: " + now);
-            String name = getConfig().getString("entity." + type, "未知生物");
-            String reason_cn = getConfig().getString("reason." + reason, "No why!");
-            p.sendMessage(ChatColor.YELLOW + "你被" + ChatColor.RED + name + ChatColor.YELLOW + "盯上了！因为" + ChatColor.RED + reason_cn + ChatColor.YELLOW + "还有" + ChatColor.RED + distance + "m" + ChatColor.YELLOW + "被爆菊！");
         }
+    }
+
+    private void sendNotice(EntityTargetEvent event) {
+        Entity target = event.getTarget();
+        EntityType type = event.getEntity().getType();
+        Player p = (Player)target;
+        Location monsterLocation = event.getEntity().getLocation();
+        Location playerLocation = p.getLocation();
+        int distance = (int)Math.floor(monsterLocation.distance(playerLocation));
+        String reason = event.getReason().toString();
+        String playName = p.getDisplayName();
+        getLogger().info("Notice player: " + playName + " " + type.toString() + " " + reason);
+        // getLogger().info("Send time: " + now);
+        String name = getConfig().getString("entity." + type, "未知生物");
+        String reason_cn = getConfig().getString("reason." + reason, "No why!");
+        p.sendMessage(ChatColor.YELLOW + "你被" + ChatColor.RED + name + ChatColor.YELLOW + "盯上了！因为" + ChatColor.RED + reason_cn + ChatColor.YELLOW + "还有" + ChatColor.RED + distance + "m" + ChatColor.YELLOW + "被爆菊！");
     }
  
 }

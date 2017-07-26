@@ -56,6 +56,7 @@ entity:
     WITHER: 凋灵
     WOLF: 狼
     ZOMBIE: 僵尸
+    ZOMBIE_VILLAGER: 僵尸村民
 reason:
     CLOSEST_ENTITY: 离太近了
     CLOSEST_PLAYER: 你离它太近了
