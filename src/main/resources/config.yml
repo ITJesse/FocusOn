@@ -1,62 +1,75 @@
 entity:
-    ARROW: 弓箭
-    BAT: 蝙蝠  
-    BLAZE: 烈焰人
-    BOAT: 船
+    ARMOR_STAND: 盔甲架
+    ARROW: 箭
+    BAT: 蝙蝠
+    BLAZE: 烈焰怪
+    BOAT: Nice Boat
     CAVE_SPIDER: 洞穴蜘蛛
     CHICKEN: 小鸡鸡
-    COMPLEX_PART: 奇怪的东西
-    COW: 牛
+    COW: 老母牛
     CREEPER: JJ怪
-    DROPPED_ITEM: 掉落物品
     EGG: 蛋蛋
     ENDER_CRYSTAL: 末影水晶
     ENDER_DRAGON: 末影龙
     ENDER_PEARL: 末影珍珠
-    ENDER_SIGNAL: 奇怪的东西
     ENDERMAN: 黑基佬
+    ENDERMITE: 末影螨
     EXPERIENCE_ORB: 经验球
-    FALLING_BLOCK: 掉落的方块
     FIREBALL: 火球
     FIREWORK: 烟花
     FISHING_HOOK: 鱼钩
     GHAST: 恶魂
-    GIANT: 巨人僵尸
+    GIANT: 巨人
+    GUARDIAN: 守护者
     HORSE: 马
     IRON_GOLEM: 铁傀儡
-    ITEM_FRAME: 奇怪的东西
-    LEASH_HITCH: 奇怪的东西
-    LIGHTNING: 奇怪的东西
+    LIGHTNING: 闪电
     MAGMA_CUBE: 岩浆怪
     MINECART: 矿车
     MINECART_CHEST: 箱子矿车
-    MINECART_FURNACE: 炉子矿车
+    MINECART_COMMAND: 命令矿车
+    MINECART_FURNACE: 动力矿车
     MINECART_HOPPER: 漏斗矿车
-    MINECART_MOB_SPAWNER: 奇怪的东西
+    MINECART_MOB_SPAWNER: 刷怪矿车
     MINECART_TNT: TNT矿车
-    MUSHROOM_COW: 咩菇
+    MUSHROOM_COW: 哞菇
     OCELOT: 豹猫
     PAINTING: 画
     PIG: 猪
     PIG_ZOMBIE: 僵尸猪人
     PLAYER: 玩家
     PRIMED_TNT: 点燃的TNT
+    RABBIT: 兔子
     SHEEP: 羊
-    SILVERFISH: 蠹虫
+    SILVERFISH: 蠢虫
     SKELETON: 骷髅弓箭手
-    SLIME: 小软
+    SLIME: 史莱姆
     SMALL_FIREBALL: 小火球
     SNOWBALL: 雪球
     SNOWMAN: 雪人
     SPIDER: 蜘蛛
-    SPLASH_POTION: 奇怪的东西
-    SQUID: 鱿鱼
-    THROWN_EXP_BOTTLE: 掉落的经验瓶
-    UNKNOWN: 不知名的东西
+    SQUID: 乌贼
+    UNKNOWN: 未知物体
     VILLAGER: 村民
     WEATHER: 天气
     WITCH: 女巫
     WITHER: 凋灵
-    WITHER_SKULL: 凋灵头骨
     WOLF: 狼
     ZOMBIE: 僵尸
+reason:
+    CLOSEST_ENTITY: 离太近了
+    CLOSEST_PLAYER: 你离它太近了
+    COLLISION: 你撞了它
+    CUSTOM: 某些原因
+    DEFEND_VILLAGE: 保卫村庄
+    FORGOT_TARGET: 它放弃了原有目标
+    OWNER_ATTACKED_TARGET: 它的主人正在攻击你
+    PIG_ZOMBIE_TARGET: 你犯了众怒
+    RANDOM_TARGET: 你长得丑
+    REINFORCEMENT_TARGET: 它叫来了援兵
+    TARGET_ATTACKED_ENTITY: 你打了它
+    TARGET_ATTACKED_NEARBY_ENTITY: 你打了它
+    TARGET_ATTACKED_OWNER: 你打了它主人
+    TARGET_DIED: OT了
+    TEMPT: 被引诱了
+    UNKNOWN: No why
